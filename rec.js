@@ -100,15 +100,7 @@ app.get('/api', function (req, res) { //WHERE id = "4"
         }
         if (!error) {
             console.log('Success');
-
-            //for(let i = 0; i < rows.length(); i++) {
-                //console.log(rows);
-            //}
-            //console.log(array);
             res.json(rows);
-            //let id = rows[0].id
-            //console.log(id);
-            //console.log(rows.getString("city_name"));
 
         }  
     })

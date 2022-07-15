@@ -39,10 +39,10 @@ async function getData() {
             const txt =`Weather in ${item.city_name}: ${item.weather}. The temperature is: ${item.temp}° F.
             Lat: ${item.lat}°, 
             Long: ${item.lon}°
-            The concentration of particulate matter (${item.air.parameter}) 
-            is ${item.air.value} ${item.air.unit}.
+            The concentration of particulate matter (${item.parameter}) 
+            is ${item.value} ${item.unit}.
             Last read on 
-            ${item.air.lastUpdated}.`
+            ${item.lastUpdated}.`
             marker.bindPopup(txt);
         } catch (error) {
             const txt =`Weather in ${item.city_name}: ${item.weather}. The temperature is: ${item.temp}° F.
