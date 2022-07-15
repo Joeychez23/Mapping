@@ -47,8 +47,8 @@ async function getData() {
         } catch (error) {
             const txt =`Weather in ${item.city_name}: ${item.weather}. The temperature is: ${item.temp}° F.
             Lat: ${item.lat}°, 
-            Long: ${item.lon}°
-            No air quality reading available in this area :(`
+            Long: ${item.lon}°`
+            //No air quality reading available in this area :(`
             marker.bindPopup(txt);
 
         }

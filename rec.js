@@ -93,8 +93,8 @@ app.get('/', function (req, res) {
 
 
 
-app.get('/api', function (req, res) {
-    connection.query('SELECT * FROM data WHERE id = "4"', (error, rows) => {
+app.get('/api', function (req, res) { //WHERE id = "4"
+    connection.query('SELECT * FROM data', (error, rows) => {
         if (error) {
             console.log('error');
         }
