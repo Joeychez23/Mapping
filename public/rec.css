@@ -1,0 +1,347 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*CSS Starts*/
+
+
+
+
+ .container-fluid {
+    height: 100%;
+    background-color: cyan;
+ }
+
+ body {
+    background-color: white;
+ }
+
+ .title {
+    font-size: 20px;
+    text-decoration: underline;
+    margin-bottom: 12.5px;
+ }
+
+
+ .col-md-4 {
+    height: 500px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+ .content1-left {
+
+    background-color: red;
+    height: 500px;
+    text-align: center;
+
+ }
+
+
+
+
+
+
+
+
+
+ .content1-center {
+    background-color: white;
+    height: 500px;
+    text-align: center;
+ }
+
+ .content1-center-data {
+    background-color: white;
+    height: 500px;
+    text-align: center;
+    overflow:hidden;
+    overflow-y: hidden;
+    scroll-snap-type: y mandatory;
+
+ }
+
+ .content1-center-data:hover{
+
+    overflow:hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scrollbar-color: grey black;
+ }
+
+ .center-body{
+    text-decoration: none;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+ #currlo {
+    text-decoration: underline;
+    font-style: italic;
+ }
+
+
+
+ #input {
+    margin-top: -12.5px;
+ }
+
+
+ #nameBox {
+    width: 60%;
+    border: solid 1px black;
+ }
+ #subData {
+    margin-top: 2px;
+    width: 60%;
+    border: solid 1px black;
+ }
+
+ .data {
+    font-size: 10px;
+    text-decoration: none;
+    background-color: lightblue;
+ }
+
+
+
+ #canvas {
+    background-color: green;
+    height: 320;
+    width: 240;
+ }
+
+
+
+ #video {
+    margin-top: 10px;
+    height: 200px;
+    /*position: fixed;*/
+
+ }
+
+
+ #links {
+    margin-bottom: 20px;
+ }
+
+
+
+
+ #issMap { 
+   margin-top: 40px;
+   /*visibility: hidden;*/
+   height: 350px;
+}
+
+
+ #air_con {
+   margin-top: -15px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .content1-right {
+    background-color: purple;
+    height: 500px;
+    text-align: center;
+ }
+
+
+
+
+
+
+
+
+
+
+
+ .content2-left {
+    background-color: navy;
+    height: 500px;
+    text-align: center;
+    color: white;
+ }
+
+
+
+
+
+
+
+
+
+
+
+ .content2-center {
+    background-color: yellow;
+    height: 500px;
+    text-align: center;
+ }
+
+
+
+
+
+
+
+
+
+
+
+ .content2-right {
+    background-color: maroon;
+    height: 500px;
+    text-align: center;
+ }
+
