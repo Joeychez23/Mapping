@@ -45,7 +45,7 @@ async function getData() {
             ${item.lastUpdated}.`
             marker.bindPopup(txt);
         } else {
-            const txt =`Weather in ${item.city_name}: ${item.weather}. The temperature is: ${item.temp}° F.
+            const txt =`Weather in ${item.city_name}: ${item.weather}. The temperature is: ${item.temp}° F. \n
             Lat: ${item.lat}°, 
             Long: ${item.lon}°
             No air quality reading available in this area :(`
