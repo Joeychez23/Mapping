@@ -25,7 +25,7 @@ async function getData() {
     //centerTop.removeChild(purge);
     const response = await fetch('/api');
     const val = await response.json();
-    //console.log(val)
+    console.log(val)
     //removeAllChildNodes(centerBody);
     for (item of val) {
 
