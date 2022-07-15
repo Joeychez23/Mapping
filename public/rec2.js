@@ -35,7 +35,7 @@ async function getData() {
 
 
 
-        if (item.value >= 0 || item.value < 0) {
+        if (item.value != null) {
             const txt =`Weather in ${item.city_name}: ${item.weather}. The temperature is: ${item.temp}° F.
             Lat: ${item.lat}°, 
             Long: ${item.lon}°
