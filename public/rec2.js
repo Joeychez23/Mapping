@@ -5,7 +5,7 @@ const centerBody = document.querySelector('.center-body');
 
 //Initilize map and tiles:
 //Create map
-const mymap = L.map('issMap').setView([1, 1], 0);
+const mymap = L.map('issMap').setView([0, 0], 1);
 //Copyright
 const attribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
 //Tile URL
