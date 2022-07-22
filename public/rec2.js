@@ -40,7 +40,7 @@ async function getData() {
             <br>Lat: ${item.lat}°, 
             Long: ${item.lon}°
             <br>Concentration of particulate matter (${item.parameter}) 
-            is ${item.value} ${item.unit}.
+            is ${item.value}${item.unit}.
             <br>Last read on 
             ${item.lastUpdated}.`
             const txtimg = txt + "<p>I can exist</p>";
