@@ -36,7 +36,7 @@ async function getData() {
 
 
         if (item.value != null) {
-            const txt =`Weather in ${item.city_name}: ${item.weather}. The temperature is: ${item.temp}° F.
+            const txt =`Weather in ${item.city_name}: ${item.weather}. <br>The temperature is: ${item.temp}° F.
             Lat: ${item.lat}°, 
             Long: ${item.lon}°
             The concentration of particulate matter (${item.parameter}) 
