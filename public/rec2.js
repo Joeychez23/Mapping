@@ -43,7 +43,9 @@ async function getData() {
             is ${item.value} ${item.unit}.
             Last read on 
             ${item.lastUpdated}.`
-            marker.bindPopup(txt);
+            const txtimg = txt + "<p>I can exist</p>";
+            marker.bindPopup(txtimg);
+            marker.bindPopup(txtimg);
         } else {
             const txt =`Weather in ${item.city_name}: ${item.weather}. The temperature is: ${item.temp}° F. \n
             Lat: ${item.lat}°, 
