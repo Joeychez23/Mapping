@@ -39,18 +39,17 @@ async function getData() {
             const txt =`Weather in ${item.city_name}: ${item.weather}.<br>The temperature is: ${item.temp}° F.
             <br>Lat: ${item.lat}°, 
             Long: ${item.lon}°
-            <br>The concentration of particulate matter (${item.parameter}) 
+            <br>Concentration of particulate matter (${item.parameter}) 
             is ${item.value} ${item.unit}.
             <br>Last read on 
             ${item.lastUpdated}.`
             const txtimg = txt + "<p>I can exist</p>";
-            marker.bindPopup(txtimg);
-            marker.bindPopup(txtimg);
+            marker.bindPopup(txt);
         } else {
-            const txt =`Weather in ${item.city_name}: ${item.weather}. The temperature is: ${item.temp}° F. \n
-            Lat: ${item.lat}°, 
+            const txt =`Weather in ${item.city_name}: ${item.weather}.<br>The temperature is: ${item.temp}° F. \n
+            <br>Lat: ${item.lat}°, 
             Long: ${item.lon}°
-            No air quality reading available in this area :(`
+            <br>No air quality reading available in this area :(`
             marker.bindPopup(txt);
 
         }
