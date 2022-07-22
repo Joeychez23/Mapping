@@ -36,12 +36,12 @@ async function getData() {
 
 
         if (item.value != null) {
-            const txt =`Weather in ${item.city_name}: ${item.weather}. <br>The temperature is: ${item.temp}° F.
-            Lat: ${item.lat}°, 
+            const txt =`Weather in ${item.city_name}: ${item.weather}.<br>The temperature is: ${item.temp}° F.
+            <br>Lat: ${item.lat}°, 
             Long: ${item.lon}°
-            The concentration of particulate matter (${item.parameter}) 
+            <br>The concentration of particulate matter (${item.parameter}) 
             is ${item.value} ${item.unit}.
-            Last read on 
+            <br>Last read on 
             ${item.lastUpdated}.`
             const txtimg = txt + "<p>I can exist</p>";
             marker.bindPopup(txtimg);
