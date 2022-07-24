@@ -35,7 +35,7 @@ async function getData() {
 
 
 
-        if (item.value != null && item.base64 != null && item.name != null) {
+        if (item.value != null) {
             
             let txt =`Weather in ${item.city_name}: ${item.weather}.<br>The temperature is: ${item.temp}° F.
             <br>Lat: ${item.lat}°, 
@@ -50,26 +50,17 @@ async function getData() {
                 txt += `<br><img src= ${item.base64} style= "height: 80px; margin-left: 30%;">`
             }
             marker.bindPopup(txt);
-        } else if(item.value != null && item.base64 != null && item.name == null) {     
-            const txt =`Weather in ${item.city_name}: ${item.weather}.<br>The temperature is: ${item.temp}° F.
-            <br>Lat: ${item.lat}°, 
-            Long: ${item.lon}°
-            <br>Particulate matter (${item.parameter}): ${item.value}${item.unit}.
-            <br>Last read on 
-            ${item.lastUpdated}.
-            <br><img src= ${item.base64} style= "height: 80px; margin-left: 30%;">`
-            marker.bindPopup(txt);
-
-        }
-
-
-        
-        
-        else {
-            const txt =`Weather in ${item.city_name}: ${item.weather}.<br>The temperature is: ${item.temp}° F. \n
+        } else {
+            let txt =`Weather in ${item.city_name}: ${item.weather}.<br>The temperature is: ${item.temp}° F. \n
             <br>Lat: ${item.lat}°, 
             Long: ${item.lon}°
             <br>No air quality reading available in this area :(`
+            if (item.name != null) {
+                txt += `<br>Updated by: ${item.name}`
+            }
+            if (item.base64 != null) {
+                txt += `<br><img src= ${item.base64} style= "height: 80px; margin-left: 30%;">`
+            }
             marker.bindPopup(txt);
 
         }
