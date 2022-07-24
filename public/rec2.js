@@ -44,7 +44,7 @@ async function getData() {
             <br>Last read on 
             ${item.lastUpdated}.
             <br>Updated by: ${item.name}
-            <br><img src= ${item.base64} style= "height: 80px; margin-left: 25%;">`
+            <br><img src= ${item.base64} style= "height: 80px; margin-left: 30%;">`
             //const txtimg = txt + "<p>I can exist</p>";
             marker.bindPopup(txt);
         } else if(item.value != null && item.base64 != null && item.name == null) {
