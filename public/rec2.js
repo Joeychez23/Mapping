@@ -42,23 +42,27 @@ async function getData() {
             Long: ${item.lon}°
             <br>Particulate matter (${item.parameter}): ${item.value}${item.unit}.
             <br>Last read on 
-            ${item.lastUpdated}.
-            <br>Updated by: ${item.name}
-            <br><img src= ${item.base64} style= "height: 80px; margin-left: 30%;">`
-            //const txtimg = txt + "<p>I can exist</p>";
+            ${item.lastUpdated}.`
+            if (item.name != null) {
+                txt += `<br>Updated by: ${item.name}`
+            }
+            if (item.base64 != null) {
+             txt += `<br><img src= ${item.base64} style= "height: 80px; margin-left: 30%;">`
+            }
             marker.bindPopup(txt);
-        } else if(item.value != null && item.base64 != null && item.name == null) {
-            
+        } else if(item.value != null && item.base64 != null && item.name == null) {     
             const txt =`Weather in ${item.city_name}: ${item.weather}.<br>The temperature is: ${item.temp}° F.
             <br>Lat: ${item.lat}°, 
             Long: ${item.lon}°
             <br>Particulate matter (${item.parameter}): ${item.value}${item.unit}.
             <br>Last read on 
-            ${item.lastUpdated}.`
-            const txtimg = txt + "<p>I can exist</p>";
+            ${item.lastUpdated}.
+            <br><img src= ${item.base64} style= "height: 80px; margin-left: 30%;">`
             marker.bindPopup(txt);
 
         }
+
+
         
         
         else {
