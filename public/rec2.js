@@ -37,12 +37,15 @@ async function getData() {
 
         if (item.value != null) {
             
-            let txt =`Weather in ${item.city_name}: ${item.weather}.<br>The temperature is: ${item.temp}° F.
+            let txt =`
+            <p style= "text-align: center;>
+            Weather in ${item.city_name}: ${item.weather}.<br>The temperature is: ${item.temp}° F.
             <br>Lat: ${item.lat}°, 
             Long: ${item.lon}°
             <br>Particulate matter (${item.parameter}): ${item.value}${item.unit}.
             <br>Last read on 
-            ${item.lastUpdated}.`
+            ${item.lastUpdated}.
+            </p>`
             if (item.name != null) {
                 txt += `<br>Updated by: ${item.name}`
             }
