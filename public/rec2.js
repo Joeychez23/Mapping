@@ -47,7 +47,7 @@ async function getData() {
                 txt += `<br>Updated by: ${item.name}`
             }
             if (item.base64 != null) {
-             txt += `<br><img src= ${item.base64} style= "height: 80px; margin-left: 30%;">`
+                txt += `<br><img src= ${item.base64} style= "height: 80px; margin-left: 30%;">`
             }
             marker.bindPopup(txt);
         } else if(item.value != null && item.base64 != null && item.name == null) {     
