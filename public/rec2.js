@@ -37,7 +37,7 @@ async function getData() {
 
         if (item.value != null && item.base64 != null && item.name != null) {
             
-            const txt =`Weather in ${item.city_name}: ${item.weather}.<br>The temperature is: ${item.temp}° F.
+            let txt =`Weather in ${item.city_name}: ${item.weather}.<br>The temperature is: ${item.temp}° F.
             <br>Lat: ${item.lat}°, 
             Long: ${item.lon}°
             <br>Particulate matter (${item.parameter}): ${item.value}${item.unit}.
