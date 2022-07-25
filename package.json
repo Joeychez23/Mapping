@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node rec.js"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
