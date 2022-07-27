@@ -159,7 +159,7 @@ body {
 .M-L {
    flex-wrap: wrap;
    float: left;
-   padding-left: 20px;
+   padding-left: 15px;
    line-height: 60px;
 }
 
@@ -168,7 +168,7 @@ body {
    list-style: none;
    display: block;
    float: left;
-   padding-left: 0px 0px;
+   padding-left: 0px 10px;
    line-height: 60px;
    text-transform: uppercase;
 }
@@ -178,7 +178,7 @@ body {
    font-size: 16px;
    font-family: Arial, Helvetica, sans-serif;
    color: #111;
-   padding: 0 6px;
+   padding: 0 20px;
 
 }
 
