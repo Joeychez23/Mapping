@@ -505,7 +505,7 @@ body {
    .M-L {
       flex-wrap: wrap;
       float: left;
-      padding-left: 10px;
+      padding-left: 5px;
       line-height: 60px;
    }
    
